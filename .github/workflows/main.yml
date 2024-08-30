@@ -28,5 +28,5 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: ${{ secrets.DOCKERHUB_USERNAME }}/pm4-back:latest
+        tags: ${{ secrets.DOCKERHUB_USERNAME }}/webadminisp-back:latest
         # platforms: linux/amd64,linux/arm64
