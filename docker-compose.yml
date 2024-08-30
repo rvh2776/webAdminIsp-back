@@ -2,8 +2,8 @@
 
 services:
   webadminisp:
-    build: ./
-    # image: rvh2776/pm4-back:latest  #* En vez de crear una imagen con (buil: ./) directamente me bajo la imagen de Docker hub.
+    # build: ./
+    image: rvh2776/webadminisp-back:latest  #* En vez de crear una imagen con (buil: ./) directamente me bajo la imagen de Docker hub.
     ports:
       - '3000:3000'
     env_file:
