@@ -1,0 +1,47 @@
+##version: '3.8'
+
+services:
+  nestapp:
+    ##build: ./
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ##image: pfinal:latest
+    container_name: pfinal
+    ports:
+      - '3000:3000'
+    env_file:
+      - .env.development
+    depends_on:
+      - postgresdbpf
+    networks:
+      - pfnetwork
+    environment:
+      - TZ=America/Argentina/Buenos_Aires
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+    ##command: bash -c "npm run migration:run && npm run start:dev"
+
+  postgresdbpf:
+    image: postgres:latest
+    container_name: postgresdbpf
+    ports:
+      - '5433:5432'
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+    env_file:
+      - .env.development
+    networks:
+      - pfnetwork
+    environment:
+      - TZ=America/Argentina/Buenos_Aires
+
+networks:
+  pfnetwork:
+    driver: bridge
+
+volumes:
+  pgdata:

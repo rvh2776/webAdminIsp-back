@@ -1,0 +1,42 @@
+export const ServiciosMock = [
+  {
+    agente: 'SeedAdmin',
+    velocidadBajada: '6 megas',
+    velocidadSubida: '2 megas',
+    costoConexion: 20000,
+    abono: 4500,
+    nombre: '6/2',
+  },
+  {
+    agente: 'SeedAdmin',
+    velocidadBajada: '30 megas',
+    velocidadSubida: '7.5 megas',
+    costoConexion: 30000,
+    abono: 7500,
+    nombre: '30/7.5',
+  },
+  {
+    agente: 'SeedAdmin',
+    velocidadBajada: '40 megas',
+    velocidadSubida: '10 megas',
+    costoConexion: 30000,
+    abono: 9000,
+    nombre: '40/10',
+  },
+  {
+    agente: 'SeedAdmin',
+    velocidadBajada: '50 megas',
+    velocidadSubida: '15 megas',
+    costoConexion: 30000,
+    abono: 11000,
+    nombre: '50/15',
+  },
+  {
+    agente: 'SeedAdmin',
+    velocidadBajada: '100 megas',
+    velocidadSubida: '35 megas',
+    costoConexion: 30000,
+    abono: 15000,
+    nombre: '100/35',
+  },
+];
