@@ -1,17 +1,21 @@
-FROM node:20.12.2
+FROM node:20
 
-WORKDIR /app
+#? Instalar postgresql-client, para poder verificar si levantó la base de datos, para despues ejecutar las migraciones antes de levantar la app.
+# RUN apt-get update && apt-get install -y postgresql-client
+
+#? Instala netcat, para poder verificar si levantó la base de datos, para despues ejecutar las migraciones antes de levantar la app.
+# RUN apt-get update && apt-get install -y netcat-traditional docker docker-compose
+
+WORKDIR /usr/src/app
 
 COPY package*.json ./
 
-##RUN npm install
-RUN npm ci
+RUN npm install
 
-COPY . ./
+COPY . .
 
 RUN npm run build
 
 EXPOSE 3000
 
-CMD ["npm", "run", "start"]
-##CMD ["bash", "-c", "npm run migration:run && npm run start"]
+CMD [ "npm", "run", "start" ]
