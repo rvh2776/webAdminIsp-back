@@ -75,6 +75,9 @@ export class FacturacionService {
       select: {
         user: {
           nombre: true,
+          direccion: true,
+          codArea: true,
+          telefono: true,
         },
       },
     });
