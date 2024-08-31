@@ -131,8 +131,17 @@ export class PdfService {
           .fontSize(12)
           .text(factura.concepto, 60, 350);
         doc.text(`$ ${factura.importe}`, 170, 350);
-        doc.text(this.formatDate(factura.fechaPago), 290, 350);
-        doc.text(factura.tipoPago, 450, 350);
+        doc.text(
+          factura.fechaPago ? this.formatDate(factura.fechaPago) : '--------',
+          290,
+          350,
+        );
+        if (!factura.tipoPago) {
+          doc.fillColor('red');
+        } else {
+          doc.fillColor('green');
+        }
+        doc.text(factura.tipoPago ? factura.tipoPago : 'No pagada', 450, 350);
 
         // Separador
         doc
