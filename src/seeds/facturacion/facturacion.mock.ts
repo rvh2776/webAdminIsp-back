@@ -10,7 +10,7 @@ export const FacturacionMock = {
       pagado: true,
       fechaVencimiento: new Date('2024-02-10T00:00:00.000Z'),
       importe: 9000,
-      fechaPago: ' ',
+      fechaPago: '',
     },
     {
       agente: 'SeedAdmin',
@@ -22,7 +22,7 @@ export const FacturacionMock = {
       pagado: true,
       fechaVencimiento: new Date('2024-03-10T00:00:00.000Z'),
       importe: 9000,
-      fechaPago: ' ',
+      fechaPago: '',
     },
     {
       agente: 'SeedAdmin',
@@ -34,7 +34,7 @@ export const FacturacionMock = {
       pagado: true,
       fechaVencimiento: new Date('2024-04-10T00:00:00.000Z'),
       importe: 9000,
-      fechaPago: ' ',
+      fechaPago: '',
     },
     {
       agente: 'SeedAdmin',
@@ -46,7 +46,7 @@ export const FacturacionMock = {
       pagado: true,
       fechaVencimiento: new Date('2024-05-10T00:00:00.000Z'),
       importe: 9000,
-      fechaPago: ' ',
+      fechaPago: '',
     },
     {
       agente: 'SeedAdmin',
@@ -58,7 +58,7 @@ export const FacturacionMock = {
       pagado: true,
       fechaVencimiento: new Date('2024-06-10T00:00:00.000Z'),
       importe: 9000,
-      fechaPago: ' ',
+      fechaPago: '',
     },
     {
       agente: 'SeedAdmin',
@@ -70,7 +70,7 @@ export const FacturacionMock = {
       pagado: true,
       fechaVencimiento: new Date('2024-07-10T00:00:00.000Z'),
       importe: 9000,
-      fechaPago: ' ',
+      fechaPago: '',
     },
     {
       agente: 'SeedAdmin',
@@ -82,7 +82,7 @@ export const FacturacionMock = {
       pagado: false,
       fechaVencimiento: new Date('2024-08-10T00:00:00.000Z'),
       importe: 9000,
-      fechaPago: ' ',
+      fechaPago: '',
     },
   ],
   albertoPerez: [
@@ -96,7 +96,7 @@ export const FacturacionMock = {
       pagado: true,
       fechaVencimiento: new Date('2024-02-10T00:00:00.000Z'),
       importe: 14000,
-      fechaPago: ' ',
+      fechaPago: '',
     },
     {
       agente: 'SeedAdmin',
@@ -108,7 +108,7 @@ export const FacturacionMock = {
       pagado: true,
       fechaVencimiento: new Date('2024-03-10T00:00:00.000Z'),
       importe: 14000,
-      fechaPago: ' ',
+      fechaPago: '',
     },
     {
       agente: 'SeedAdmin',
@@ -120,7 +120,7 @@ export const FacturacionMock = {
       pagado: true,
       fechaVencimiento: new Date('2024-04-10T00:00:00.000Z'),
       importe: 14000,
-      fechaPago: ' ',
+      fechaPago: '',
     },
     {
       agente: 'SeedAdmin',
@@ -132,7 +132,7 @@ export const FacturacionMock = {
       pagado: true,
       fechaVencimiento: new Date('2024-05-10T00:00:00.000Z'),
       importe: 14000,
-      fechaPago: ' ',
+      fechaPago: '',
     },
     {
       agente: 'SeedAdmin',
@@ -144,7 +144,7 @@ export const FacturacionMock = {
       pagado: true,
       fechaVencimiento: new Date('2024-06-10T00:00:00.000Z'),
       importe: 14000,
-      fechaPago: ' ',
+      fechaPago: '',
     },
     {
       agente: 'SeedAdmin',
@@ -156,7 +156,7 @@ export const FacturacionMock = {
       pagado: true,
       fechaVencimiento: new Date('2024-07-10T00:00:00.000Z'),
       importe: 14000,
-      fechaPago: ' ',
+      fechaPago: '',
     },
     {
       agente: 'SeedAdmin',
@@ -168,7 +168,7 @@ export const FacturacionMock = {
       pagado: false,
       fechaVencimiento: new Date('2024-08-10T00:00:00.000Z'),
       importe: 14000,
-      fechaPago: ' ',
+      fechaPago: '',
     },
   ],
 };
