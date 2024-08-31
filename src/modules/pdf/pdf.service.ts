@@ -83,9 +83,10 @@ export class PdfService {
           .moveDown(0.5)
           .fontSize(12)
           .fillColor('gray')
-          .text(`Nombre: ${user.nombre}`)
-          .text(`Dirección: ${user.direccion}`)
-          .text(`Teléfono: ${user.telefono}`)
+          .text(`N° de Factura: ${factura.numFactura}`)
+          .text(`Nombre: ${factura.user.nombre}`)
+          .text(`Dirección: ${factura.user.direccion}`)
+          .text(`Teléfono: (${factura.user.codArea}) ${factura.user.telefono}`)
           .text(`Servicio: ${factura.concepto}`);
 
         // Separador
