@@ -14,7 +14,7 @@ La aplicación está construida utilizando NestJS.
 - PostgreSQL
 - TypeORM
 - Swagger (para documentación de API)
-- Otros paquetes y librerías relevantes
+- Otros paquetes y librerías relevantes.
 
 ## Configuración del Entorno
 
